@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-  var buildFolder = '../build/';
+  var buildFolder = '../';
 
   var jadedebug = {
     compileDebug: false,

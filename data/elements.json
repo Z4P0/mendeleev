@@ -1,0 +1,1334 @@
+var elements = [
+	{
+		"number": 1,
+		"name": "Hydrogen",
+		"symbol": "H",
+		"weight": 1.007,
+		"protons": 1,
+		"neutrons": 0,
+		"electrons": 1,
+		"shells": [1],
+		"electrons": 1,
+		"position":{
+			"row":1,
+			"col":1
+		},
+		"type":"other-non-metal"
+	},
+	{
+		"number": 2,
+		"name": "Helium",
+		"symbol": "He",
+		"weight": 4.002,
+		"protons": 2,
+		"neutrons": 2,
+		"electrons": 2,
+		"shells": [2],
+		"electrons": 2,
+		"position":{
+			"row":1,
+			"col":18
+		},
+		"type":"noble-gas"
+	},
+	{
+		"number": 3,
+		"name": "Lithium",
+		"symbol": "Li",
+		"weight": 6.941,
+		"protons": 3,
+		"neutrons": 4,
+		"electrons": 3,
+		"shells": [2, 1],
+		"electrons": 3,
+		"position":{
+			"row":2,
+			"col":1
+		},
+		"type":"alkali-metal"
+	},
+	{
+		"number": 4,
+		"name": "Beryllium",
+		"symbol": "Be",
+		"weight": 9.012,
+		"protons": 4,
+		"neutrons": 5,
+		"electrons": 4,
+		"shells": [2, 2],
+		"electrons": 4,
+		"position":{
+			"row":2,
+			"col":2
+		},
+		"type":"alkaline-earth-metal"
+	},
+	{
+		"number": 5,
+		"name": "Boron",
+		"symbol": "B",
+		"weight": 10.811,
+		"protons": 5,
+		"neutrons": 5,
+		"electrons": 5,
+		"shells": [2, 3],
+		"electrons": 5,
+		"position":{
+			"row":2,
+			"col":13
+		},
+		"type":"metalloid"
+	},
+	{
+		"number": 6,
+		"name": "Carbon",
+		"symbol": "C",
+		"weight": 12.010,
+		"protons": 6,
+		"neutrons": 6,
+		"electrons": 6,
+		"shells": [2, 4],
+		"electrons": 6,
+		"position":{
+			"row":2,
+			"col":14
+		},
+		"type":"other-non-metal"
+	},
+	{
+		"number": 7,
+		"name": "Nitrogen",
+		"symbol": "N",
+		"weight": 14.006,
+		"protons": 7,
+		"neutrons": 7,
+		"electrons": 7,
+		"shells": [2, 5],
+		"electrons": 7,
+		"position":{
+			"row":2,
+			"col":15
+		},
+		"type":"other-non-metal"
+	},
+	{
+		"number": 8,
+		"name": "Oxygen",
+		"symbol": "O",
+		"weight": 15.999,
+		"protons": 8,
+		"neutrons": 7,
+		"electrons": 8,
+		"shells": [2, 6],
+		"electrons": 8,
+		"position":{
+			"row":2,
+			"col":16
+		},
+		"type":"other-non-metal"
+	},
+	{
+		"number": 9,
+		"name": "Fluorine",
+		"symbol": "F",
+		"weight": 18.998,
+		"protons": 9,
+		"neutrons": 9,
+		"electrons": 9,
+		"shells": [2, 7],
+		"electrons": 9,
+		"position":{
+			"row":2,
+			"col":17
+		},
+		"type":"halogen"
+	},
+	{
+		"number": 10,
+		"name": "Neon",
+		"symbol": "Ne",
+		"weight": 20.179,
+		"protons": 10,
+		"neutrons": 10,
+		"electrons": 10,
+		"shells": [2, 8],
+		"electrons": 10,
+		"position":{
+			"row":2,
+			"col":18
+		},
+		"type":"noble-gas"
+	},
+	{
+		"number": 11,
+		"name": "Sodium",
+		"symbol": "Na",
+		"weight": 22.989,
+		"protons": 11,
+		"neutrons": 11,
+		"electrons": 11,
+		"shells": [2, 8, 1],
+		"electrons": 11,
+		"position":{
+			"row":3,
+			"col":1
+		},
+		"type":"alkali-metal"
+	},
+	{
+		"number": 12,
+		"name": "Magnesium",
+		"symbol": "Mg",
+		"weight": 24.305,
+		"protons": 12,
+		"neutrons": 12,
+		"electrons": 12,
+		"shells": [2, 8, 2],
+		"electrons": 12,
+		"position":{
+			"row":3,
+			"col":2
+		},
+		"type":"alkaline-earth-metal"
+	},
+	{
+      "number":13,
+      "name":"Aluminum",
+      "symbol":"Al",
+      "weight":26.981539,
+      "protons":13,
+      "neutrons":14,
+      "electrons":13,
+      "shells": [2, 8, 3],
+      "position":{
+         "row":3,
+         "col":13
+      },
+      "type":"post-transition-metal"
+   },
+   {
+      "number":14,
+      "name":"Silicon",
+      "symbol":"Si",
+      "weight":28.0855,
+      "protons":14,
+      "neutrons":14,
+      "electrons":14,
+      "shells": [2, 8, 4],
+      "position":{
+         "row":3,
+         "col":14
+      },
+      "type":"metalloid"
+   },
+   {
+      "number":15,
+      "name":"Phosphorus",
+      "symbol":"P",
+      "weight":30.973762,
+      "protons":15,
+      "neutrons":16,
+      "electrons":15,
+      "shells": [2, 8, 5],
+      "position":{
+        "row":3,
+         "col":15
+      },
+      "type":"other-non-metal"
+   },
+   {
+      "number":16,
+      "name":"Sulfur",
+      "symbol":"S",
+      "weight":32.066,
+      "protons":16,
+      "neutrons":16,
+      "electrons":16,
+      "shells": [2, 8, 6],
+      "position":{
+         "row":3,
+         "col":16
+      },
+      "type":"other-non-metal"
+   },
+   {
+      "number":17,
+      "name":"Chlorine",
+      "symbol":"Cl",
+      "weight":35.4527,
+      "protons":17,
+      "neutrons":18,
+      "electrons":17,
+      "shells": [2, 8, 7],
+      "position":{
+         "row":3,
+         "col":17
+      },
+      "type":"halogen"
+   },
+   {
+      "number":18,
+      "name":"Argon",
+      "symbol":"Ar",
+      "weight":39.948,
+      "protons":18,
+      "neutrons":22,
+      "electrons":18,
+      "shells": [2, 8, 8],
+      "position":{
+         "row":3,
+         "col":18
+      },
+      "type":"noble-gas"
+   },
+   {
+      "number":19,
+      "name":"Potassium",
+      "symbol":"K",
+      "weight":39.0983,
+      "protons":19,
+      "neutrons":20,
+      "electrons":19,
+      "shells": [2, 8, 8, 1],
+      "position":{
+         "row":4,
+         "col":1
+      },
+      "type":"alkali-metal"
+   },
+   {
+      "number":20,
+      "name":"Calcium",
+      "symbol":"Ca",
+      "weight":40.078,
+      "protons":20,
+      "neutrons":20,
+      "electrons":20,
+      "shells": [2, 8, 8, 2],
+      "position":{
+         "row":4,
+         "col":2
+      },
+      "type":"alkaline-earth-metal"
+   },
+   {
+      "number":21,
+      "name":"Scandium",
+      "symbol":"Sc",
+      "weight":44.95591,
+      "protons":21,
+      "neutrons":24,
+      "electrons":21,
+      "shells": [2, 8, 9, 2],
+      "position":{
+         "row":4,
+         "col":3
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":22,
+      "name":"Titanium",
+      "symbol":"Ti",
+      "weight":47.88,
+      "protons":22,
+      "neutrons":26,
+      "electrons":22,
+      "shells": [2, 8, 10, 2],
+      "position":{
+         "row":4,
+         "col":4
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":23,
+      "name":"Vanadium",
+      "symbol":"V",
+      "weight":50.9415,
+      "protons":23,
+      "neutrons":28,
+      "electrons":23,
+      "shells": [2, 8, 11, 2],
+      "position":{
+         "row":4,
+         "col":5
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":24,
+      "name":"Chromium",
+      "symbol":"Cr",
+      "weight":51.9961,
+      "protons":24,
+      "neutrons":28,
+      "electrons":24,
+      "shells": [2, 8, 13, 1],
+      "position":{
+         "row":4,
+         "col":6
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":25,
+      "name":"Manganese",
+      "symbol":"Mn",
+      "weight":54.93805,
+      "protons":25,
+      "neutrons":30,
+      "electrons":25,
+      "shells": [2, 8, 13, 2],
+      "position":{
+         "row":4,
+         "col":7
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":26,
+      "name":"Iron",
+      "symbol":"Fe",
+      "weight":55.847,
+      "protons":26,
+      "neutrons":30,
+      "electrons":26,
+      "shells": [2, 8, 14, 2],
+      "position":{
+         "row":4,
+         "col":8
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":27,
+      "name":"Cobalt",
+      "symbol":"Co",
+      "weight":58.9332,
+      "protons":27,
+      "neutrons":32,
+      "electrons":27,
+      "shells": [2, 8, 15, 2],
+      "position":{
+         "row":4,
+         "col":9
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":28,
+      "name":"Nickel",
+      "symbol":"Ni",
+      "weight":58.6934,
+      "protons":28,
+      "neutrons":31,
+      "electrons":28,
+      "shells": [2, 8, 16, 2],
+      "position":{
+         "row":4,
+         "col":10
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":29,
+      "name":"Copper",
+      "symbol":"Cu",
+      "weight":63.546,
+      "protons":29,
+      "neutrons":35,
+      "electrons":29,
+      "shells": [2, 8, 18, 1],
+      "position":{
+         "row":4,
+         "col":11
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":30,
+      "name":"Zinc",
+      "symbol":"Zn",
+      "weight":65.39,
+      "protons":30,
+      "neutrons":35,
+      "electrons":30,
+      "shells": [2, 8, 18, 2],
+      "position":{
+         "row":4,
+         "col":12
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":31,
+      "name":"Gallium",
+      "symbol":"Ga",
+      "weight":69.723,
+      "protons":31,
+      "neutrons":39,
+      "electrons":31,
+      "shells": [2, 8, 18, 3],
+      "position":{
+         "row":4,
+         "col":13
+      },
+      "type":"post-transition-metal"
+   },
+   {
+      "number":32,
+      "name":"Germanium",
+      "symbol":"Ge",
+      "weight":72.61,
+      "protons":32,
+      "neutrons":41,
+      "electrons":32,
+      "shells": [2, 8, 18, 4],
+      "position":{
+         "row":4,
+         "col":14
+      },
+      "type":"metalloid"
+   },
+   {
+      "number":33,
+      "name":"Arsenic",
+      "symbol":"As",
+      "weight":74.92159,
+      "protons":33,
+      "neutrons":42,
+      "electrons":33,
+      "shells": [2, 8, 18, 5],
+      "position":{
+         "row":4,
+         "col":15
+      },
+      "type":"metalloid"
+   },
+   {
+      "number":34,
+      "name":"Selenium",
+      "symbol":"Se",
+      "weight":78.96,
+      "protons":34,
+      "neutrons":45,
+      "electrons":34,
+      "shells": [2, 8, 18, 6],
+      "position":{
+         "row":4,
+         "col":16
+      },
+      "type":"other-non-metal"
+   },
+   {
+      "number":35,
+      "name":"Bromine",
+      "symbol":"Br",
+      "weight":79.904,
+      "protons":35,
+      "neutrons":45,
+      "electrons":35,
+      "shells": [2, 8, 18, 7],
+      "position":{
+         "row":4,
+         "col":17
+      },
+      "type":"halogen"
+   },
+   {
+      "number":36,
+      "name":"Krypton",
+      "symbol":"Kr",
+      "weight":83.8,
+      "protons":36,
+      "neutrons":48,
+      "electrons":36,
+      "shells": [2, 8, 18, 8],
+      "position":{
+         "row":4,
+         "col":18
+      },
+      "type":"noble-gas"
+   },
+   {
+      "number":37,
+      "name":"Rubidium",
+      "symbol":"Rb",
+      "weight":85.4678,
+      "protons":37,
+      "neutrons":48,
+      "electrons":37,
+      "shells": [2, 8, 18, 8, 1],
+      "position":{
+         "row":5,
+         "col":1
+      },
+      "type":"alkali-metal"
+   },
+   {
+      "number":38,
+      "name":"Strontium",
+      "symbol":"Sr",
+      "weight":87.62,
+      "protons":38,
+      "neutrons":50,
+      "electrons":38,
+      "shells": [2, 8, 18, 8, 2],
+      "position":{
+         "row":5,
+         "col":2
+      },
+      "type":"alkaline-earth-metal"
+   },
+   {
+      "number":39,
+      "name":"Yttrium",
+      "symbol":"Y",
+      "weight":88.90585,
+      "protons":39,
+      "neutrons":50,
+      "electrons":39,
+      "shells": [2, 8, 18, 9, 2],
+      "position":{
+         "row":5,
+         "col":3
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":40,
+      "name":"Zirconium",
+      "symbol":"Zr",
+      "weight":91.224,
+      "protons":40,
+      "neutrons":51,
+      "electrons":40,
+      "shells": [2, 8, 18, 10, 2],
+      "position":{
+         "row":5,
+         "col":4
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":41,
+      "name":"Niobium",
+      "symbol":"Nb",
+      "weight":92.90638,
+      "protons":41,
+      "neutrons":52,
+      "electrons":41,
+      "shells": [2, 8, 18, 12, 1],
+      "position":{
+         "row":5,
+         "col":5
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":42,
+      "name":"Molybdenum",
+      "symbol":"Mo",
+      "weight":95.94,
+      "protons":42,
+      "neutrons":54,
+      "electrons":42,
+      "shells": [2, 8, 18, 13, 1],
+      "position":{
+         "row":5,
+         "col":6
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":43,
+      "name":"Technetium",
+      "symbol":"Tc",
+      "weight":97.9072,
+      "protons":43,
+      "neutrons":55,
+      "electrons":43,
+      "shells": [2, 8, 18, 14, 1],
+      "position":{
+         "row":5,
+         "col":7
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":44,
+      "name":"Ruthenium",
+      "symbol":"Ru",
+      "weight":101.07,
+      "protons":44,
+      "neutrons":57,
+      "electrons":44,
+      "shells": [2, 8, 18, 15, 1],
+      "position":{
+         "row":5,
+         "col":8
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":45,
+      "name":"Rhodium",
+      "symbol":"Rh",
+      "weight":102.9055,
+      "protons":45,
+      "neutrons":58,
+      "electrons":45,
+      "shells": [2, 8, 18, 16, 1],
+      "position":{
+        "row":5,
+         "col":9
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":46,
+      "name":"Palladium",
+      "symbol":"Pd",
+      "weight":106.42,
+      "protons":46,
+      "neutrons":60,
+      "electrons":46,
+      "shells": [2, 8, 18, 18, 0],
+      "position":{
+         "row":5,
+         "col":10
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":47,
+      "name":"Silver",
+      "symbol":"Ag",
+      "weight":107.8682,
+      "protons":47,
+      "neutrons":61,
+      "electrons":47,
+      "shells": [2, 8, 18, 18, 1],
+      "position":{
+         "row":5,
+         "col":11
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":48,
+      "name":"Cadmium",
+      "symbol":"Cd",
+      "weight":112.411,
+      "protons":48,
+      "neutrons":64,
+      "electrons":48,
+      "shells": [2, 8, 18, 18, 2],
+      "position":{
+         "row":5,
+         "col":12
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":49,
+      "name":"Indium",
+      "symbol":"In",
+      "weight":114.818,
+      "protons":49,
+      "neutrons":66,
+      "electrons":49,
+      "shells": [2, 8, 18, 8, 3],
+      "position":{
+         "row":5,
+         "col":13
+      },
+      "type":"post-transition-metal"
+   },
+   {
+      "number":50,
+      "name":"Tin",
+      "symbol":"Sn",
+      "weight":118.71,
+      "protons":50,
+      "neutrons":69,
+      "electrons":50,
+      "shells": [2, 8, 18, 18, 4],
+      "position":{
+         "row":5,
+         "col":14
+      },
+      "type":"post-transition-metal"
+   },
+   {
+      "number":51,
+      "name":"Antimony",
+      "symbol":"Sb",
+      "weight":121.76,
+      "protons":51,
+      "neutrons":71,
+      "electrons":51,
+      "shells": [2, 8, 18, 18, 5],
+      "position":{
+         "row":5,
+         "col":15
+      },
+      "type":"metalloid"
+   },
+   {
+      "number":52,
+      "name":"Tellurium",
+      "symbol":"Te",
+      "weight":127.6,
+      "protons":52,
+      "neutrons":76,
+      "electrons":52,
+      "shells": [2, 8, 18, 18, 6],
+      "position":{
+         "row":5,
+         "col":16
+      },
+      "type":"metalloid"
+   },
+   {
+      "number":53,
+      "name":"Iodine",
+      "symbol":"I",
+      "weight":126.90447,
+      "protons":53,
+      "neutrons":74,
+      "electrons":53,
+      "shells": [2, 8, 18, 18, 7],
+      "position":{
+         "row":5,
+         "col":17
+      },
+      "type":"halogen"
+   },
+   {
+      "number":54,
+      "name":"Xenon",
+      "symbol":"Xe",
+      "weight":131.29,
+      "protons":54,
+      "neutrons":77,
+      "electrons":54,
+      "shells": [2, 8, 18, 18, 8],
+      "position":{
+         "row":5,
+         "col":18
+      },
+      "type":"noble-gas"
+   },
+   {
+      "number":55,
+      "name":"Cesium",
+      "symbol":"Cs",
+      "weight":132.90543,
+      "protons":55,
+      "neutrons":78,
+      "electrons":55,
+      "shells": [2, 8, 18, 18, 8, 1],
+      "position":{
+         "row":6,
+         "col":1
+      },
+      "type":"alkali-metal"
+   },
+   {
+      "number":56,
+      "name":"Barium",
+      "symbol":"Ba",
+      "weight":137.327,
+      "protons":56,
+      "neutrons":81,
+      "electrons":56,
+      "shells": [2, 8, 18, 18, 8, 2],
+      "position":{
+         "row":6,
+         "col":2
+      },
+      "type":"alkaline-earth-metal"
+   },
+   {
+      "number":72,
+      "name":"Hafnium",
+      "symbol":"Hf",
+      "weight":178.49,
+      "protons":72,
+      "neutrons":106,
+      "electrons":72,
+      "shells": [2, 8, 18, 32, 10, 2],
+      "position":{
+         "row":6,
+         "col":4
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":73,
+      "name":"Tantalum",
+      "symbol":"Ta",
+      "weight":180.9479,
+      "protons":73,
+      "neutrons":108,
+      "electrons":73,
+      "shells": [2, 8, 18, 32, 11, 2],
+      "position":{
+         "row":6,
+         "col":5
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":74,
+      "name":"Tungsten",
+      "symbol":"W",
+      "weight":183.84,
+      "protons":74,
+      "neutrons":110,
+      "electrons":74,
+      "shells": [2, 8, 18, 32, 12, 2],
+      "position":{
+         "row":6,
+         "col":6
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":75,
+      "name":"Rhenium",
+      "symbol":"Re",
+      "weight":186.207,
+      "protons":75,
+      "neutrons":111,
+      "electrons":75,
+      "shells": [2, 8, 18, 32, 13, 2],
+      "position":{
+         "row":6,
+         "col":7
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":76,
+      "name":"Osmium",
+      "symbol":"Os",
+      "weight":190.23,
+      "protons":76,
+      "neutrons":114,
+      "electrons":76,
+      "shells": [2, 8, 18, 32, 14, 2],
+      "position":{
+         "row":6,
+         "col":8
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":77,
+      "name":"Iridium",
+      "symbol":"Ir",
+      "weight":192.22,
+      "protons":77,
+      "neutrons":115,
+      "electrons":77,
+      "shells": [2, 8, 18, 32, 15, 2],
+      "position":{
+         "row":6,
+         "col":9
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":78,
+      "name":"Platinum",
+      "symbol":"Pt",
+      "weight":195.08,
+      "protons":78,
+      "neutrons":117,
+      "electrons":78,
+      "shells": [2, 8, 18, 32, 17, 1],
+      "position":{
+         "row":6,
+         "col":10
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":79,
+      "name":"Gold",
+      "symbol":"Au",
+      "weight":196.96654,
+      "protons":79,
+      "neutrons":118,
+      "electrons":79,
+      "shells": [2, 8, 18, 32, 18, 1],
+      "position":{
+         "row":6,
+         "col":11
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":80,
+      "name":"Mercury",
+      "symbol":"Hg",
+      "weight":200.59,
+      "protons":80,
+      "neutrons":121,
+      "electrons":80,
+      "shells": [2, 8, 18, 32, 18, 2],
+      "position":{
+         "row":6,
+         "col":12
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":81,
+      "name":"Thallium",
+      "symbol":"Tl",
+      "weight":204.3833,
+      "protons":81,
+      "neutrons":123,
+      "electrons":81,
+      "shells": [2, 8, 18, 32, 18, 3],
+      "position":{
+         "row":6,
+         "col":13
+      },
+      "type":"post-transition-metal"
+   },
+   {
+      "number":82,
+      "name":"Lead",
+      "symbol":"Pb",
+      "weight":207.2,
+      "protons":82,
+      "neutrons":126,
+      "electrons":82,
+      "shells": [2, 8, 18, 32, 18, 4],
+      "position":{
+         "row":6,
+         "col":14
+      },
+      "type":"post-transition-metal"
+   },
+   {
+      "number":83,
+      "name":"Bismuth",
+      "symbol":"Bi",
+      "weight":208.98037,
+      "protons":83,
+      "neutrons":126,
+      "electrons":83,
+      "shells": [2, 8, 18, 32, 18, 5],
+      "position":{
+         "row":6,
+         "col":15
+      },
+      "type":"post-transition-metal"
+   },
+   {
+      "number":84,
+      "name":"Polonium",
+      "symbol":"Po",
+      "weight":208.9824,
+      "protons":84,
+      "neutrons":125,
+      "electrons":84,
+      "shells": [2, 8, 18, 32, 18, 6],
+      "position":{
+         "row":6,
+         "col":16
+      },
+      "type":"metalloid"
+   },
+   {
+      "number":85,
+      "name":"Astatine",
+      "symbol":"At",
+      "weight":209.9871,
+      "protons":85,
+      "neutrons":125,
+      "electrons":85,
+      "shells": [2, 8, 18, 32, 18, 7],
+      "position":{
+         "row":6,
+         "col":17
+      },
+      "type":"halogen"
+   },
+   {
+      "number":86,
+      "name":"Radon",
+      "symbol":"Rn",
+      "weight":222.0176,
+      "protons":86,
+      "neutrons":136,
+      "electrons":86,
+      "shells": [2, 8, 18, 32, 18, 8],
+      "position":{
+         "row":6,
+         "col":18
+      },
+      "type":"noble-gas"
+   },
+   {
+      "number":87,
+      "name":"Francium",
+      "symbol":"Fr",
+      "weight":223.0197,
+      "protons":87,
+      "neutrons":136,
+      "electrons":87,
+      "shells": [2, 8, 18, 32, 18, 8, 1],
+      "position":{
+         "row":7,
+         "col":1
+      },
+      "type":"alkali-metal"
+   },
+   {
+      "number":88,
+      "name":"Radium",
+      "symbol":"Ra",
+      "weight":226.0254,
+      "protons":88,
+      "neutrons":138,
+      "electrons":88,
+      "shells": [2, 8, 18, 32, 18, 8, 2],
+      "position":{
+         "row":7,
+         "col":2
+      },
+      "type":"alkaline-earth-metal"
+   },
+   {
+      "number":104,
+      "name":"Rutherfordium",
+      "symbol":"Rf",
+      "weight": 261,
+      "protons":104,
+      "neutrons":157,
+      "electrons":104,
+      "shells": [2, 8, 18, 32, 32, 10, 2],
+      "position":{
+         "row":7,
+         "col":4
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":105,
+      "name":"Dubnium",
+      "symbol":"Db",
+      "weight": 262,
+      "protons":105,
+      "neutrons":157,
+      "electrons":105,
+      "shells": [2, 8, 18, 32, 32, 11, 2],
+      "position":{
+         "row":7,
+         "col":5
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":106,
+      "name":"Seaborgium",
+      "symbol":"Sg",
+      "weight": 266,
+      "protons":106,
+      "neutrons":157,
+      "electrons":106,
+      "shells": [2, 8, 18, 32, 32, 12, 2],
+      "position":{
+         "row":7,
+         "col":6
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":107,
+      "name":"Bohrium",
+      "symbol":"Bh",
+      "weight": 264,
+      "protons":107,
+      "neutrons":155,
+      "electrons":107,
+      "shells": [2, 8, 18, 32, 32, 13, 2],
+      "position":{
+         "row":7,
+         "col":7
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":108,
+      "name":"Hassium",
+      "symbol":"Hs",
+      "weight": 269,
+      "protons":108,
+      "neutrons":157,
+      "electrons":108,
+      "shells": [2, 8, 18, 32, 32, 14, 2],
+      "position":{
+         "row":7,
+         "col":8
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":109,
+      "name":"Meitnerium",
+      "symbol":"Mt",
+      "weight": 268,
+      "protons":109,
+      "neutrons":157,
+      "electrons":109,
+      "shells": [2, 8, 18, 32, 32, 15, 2],
+      "position":{
+         "row":7,
+         "col":9
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":110,
+      "name":"Ununnilium",
+      "symbol":"Uun",
+      "weight": 269,
+      "protons":110,
+      "neutrons":159,
+      "electrons":110,
+      "shells": [2, 8, 18, 32, 32, 17, 1],
+      "position":{
+         "row":7,
+         "col":10
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":111,
+      "name":"Unununium",
+      "symbol":"Uuu",
+      "weight": 272,
+      "protons":111,
+      "neutrons":161,
+      "electrons":111,
+      "shells": [2, 8, 18, 32, 32, 18, 1],
+      "position":{
+         "row":7,
+         "col":11
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":112,
+      "name":"Ununbium",
+      "symbol":"Uub",
+      "weight": 277,
+      "protons":112,
+      "neutrons":165,
+      "electrons":112,
+      "shells": [2, 8, 18, 32, 32, 18, 2],
+      "position":{
+         "row":7,
+         "col":12
+      },
+      "type":"transition-metal"
+   },
+   {
+      "number":113,
+      "name":"Ununtrium",
+      "symbol":"Uut",
+      "weight":"n/a",
+      "protons":1,
+      "neutrons":1,
+      "electrons":1,
+      "shells": [2, 8, 18, 32, 32, 17, 1],
+      "position":{
+         "row":7,
+         "col":13
+      },
+      "type":"post-transition-metal"
+   },
+   {
+      "number":114,
+      "name":"Ununquadium",
+      "symbol":"Uuq",
+      "weight": 289,
+      "protons":1,
+      "neutrons":1,
+      "electrons":1,
+      "shells": [2, 8, 18, 32, 32, 17, 1],
+      "position":{
+         "row":7,
+         "col":14
+      },
+      "type":"post-transition-metal"
+   },
+   {
+      "number":115,
+      "name":"Ununpentium",
+      "symbol":"Uup",
+      "weight":"n/a",
+      "protons":1,
+      "neutrons":1,
+      "electrons":1,
+      "shells": [2, 8, 18, 32, 32, 17, 1],
+      "position":{
+         "row":7,
+         "col":15
+      },
+      "type":"post-transition-metal"
+   },
+   {
+      "number":116,
+      "name":"Ununhexium",
+      "symbol":"Uuh",
+      "weight":"n/a",
+      "protons":1,
+      "neutrons":1,
+      "electrons":1,
+      "shells": [2, 8, 18, 32, 32, 17, 1],
+      "position":{
+         "row":7,
+         "col":16
+      },
+      "type":"post-transition-metal"
+   },
+   {
+      "number":117,
+      "name":"Ununseptium",
+      "symbol":"Uus",
+      "weight":"n/a",
+      "protons":1,
+      "neutrons":1,
+      "electrons":1,
+      "shells": [2, 8, 18, 32, 32, 17, 1],
+      "position":{
+         "row":7,
+         "col":17
+      },
+      "type":"halogen"
+   },
+   {
+      "number":118,
+      "name":"Ununoctium",
+      "symbol":"Uuo",
+      "weight":"n/a",
+      "protons":1,
+      "neutrons":1,
+      "electrons":1,
+      "shells": [2, 8, 18, 32, 32, 17, 1],
+      "position":{
+         "row":7,
+         "col":18
+      },
+      "type":"noble-gas"
+   }
+]

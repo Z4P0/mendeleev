@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+  <title>Mendeleev</title>
+  <meta name="description" content="Mendeleev - Interactive atom viewer">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://code.createjs.com/soundjs-0.5.2.min.js"></script>
+  <script src="js/libs/modernizr.js"></script>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body id="mendeleev">
+  <div class="container">
+    <header id="header">
+      <h1>Mendeleev</h1>
+    </header>
+    <div id="app">
+      <div id="table-wrapper" class="canvas-wrapper">
+        <canvas id="table">
+          <p>Hey, you should get a newer browser. Download Firefox or Chrome to see a cool 3D model here</p>
+        </canvas>
+      </div>
+      <div id="atom-wrapper" class="canvas-wrapper">
+        <canvas id="model">
+          <p>Hey, you should get a newer browser. Download Firefox or Chrome to see a cool 3D model here</p>
+        </canvas>
+      </div>
+      <div id="controls-wrapper">
+        <section id="atom">
+          <p id="number"></p>
+          <h2 id="symbol" class="t5"></h2>
+          <h3 id="name" class="t6"></h3>
+          <p id="weight"></p>
+          <ul id="electron-config"></ul>
+        </section>
+        <form id="search">
+          <input type="text" placeholder="Search element...">
+        </form>
+        <div id="back">
+          <button id="atom-back" class="hide">Back</button>
+          <button id="shuffle-elements">Shuffle Elements</button>
+        </div>
+        <section id="controls">
+          <h2>View</h2>
+          <ul id="controls-list">
+            <li>
+              <label>
+                <input id="bohr" type="checkbox" name="view" value="bohr"><span>Bohr Diagram</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input id="show-orbits" type="checkbox" name="view" value="orbitals"><span>Show orbitals</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input id="vibrate-nucleus" type="checkbox" name="view" value="vibrate" checked><span>Vibrate nucleus</span>
+              </label>
+            </li>
+          </ul>
+          <div>
+            <ul id="instructions">
+              <li>Use the arrow keys to pan around the table</li>
+              <li>Use 'W' and 'S' to zoom in and out of the table</li>
+              <li>Press 'R' to reset the camera</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div id="key-wrapper">
+        <ul id="element-types">
+          <li data-id="alkali-metal">
+            <div id="alkali-metals" class="color-box"></div>
+            <div class="color-label">Alkali Metal</div>
+          </li>
+          <li data-id="alkaline-earth-metal">
+            <div id="alkaline-earth-metals" class="color-box"></div>
+            <div class="color-label">Alkaline Earth Metal</div>
+          </li>
+          <li data-id="transition-metal">
+            <div id="transition-metals" class="color-box"></div>
+            <div class="color-label">Transition Metal</div>
+          </li>
+          <li data-id="post-transition-metal">
+            <div id="post-transition-metals" class="color-box"></div>
+            <div class="color-label">Post-Transition Metal</div>
+          </li>
+          <li data-id="metalloid">
+            <div id="metalloids" class="color-box"></div>
+            <div class="color-label">Metalloid</div>
+          </li>
+          <li data-id="other-non-metal">
+            <div id="other-non-metals" class="color-box"></div>
+            <div class="color-label">Other Non-Metal</div>
+          </li>
+          <li data-id="halogen">
+            <div id="halogens" class="color-box"></div>
+            <div class="color-label">Halogen</div>
+          </li>
+          <li data-id="noble-gas">
+            <div id="noble-gases" class="color-box"></div>
+            <div class="color-label">Noble Gas</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer id="footer">
+      <p>Joe Natalzia &amp; Luis Rosario - 2014</p>
+    </footer>
+  </div>
+  <script src="js/libs/three.min.js"></script>
+  <script src="js/libs/tween.min.js"></script>
+  <script src="js/main.js"></script>
+</body></html>
